@@ -2082,4 +2082,18 @@ function filterCat(cid,btn){document.querySelectorAll('.cbn').forEach(b=>b.class
 function filterHooks(){const q=document.getElementById('si').value.toLowerCase().trim();const items=document.querySelectorAll('.hi');let v=0;const sv={};items.forEach(item=>{const t=item.querySelector('.ht').textContent.toLowerCase();const show=!q||t.includes(q);item.style.display=show?'':'none';if(show){v++;sv[item.dataset.cat]=true;}});document.querySelectorAll('.cs').forEach(s=>{s.style.display=sv[s.dataset.cat]?'':'none';});document.getElementById('nr').style.display=v===0?'':'none';document.getElementById('cb2').textContent=v.toLocaleString()+' hooks';}
 function updateCount(){const v=document.querySelectorAll('.hi:not([style*="none"])').length;document.getElementById('cb2').textContent=v.toLocaleString()+' hooks';}
 </script>
+<a href="index.html" style="
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #E09078; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;">
+    Volver al inicio
+</a>
 </body></html>
